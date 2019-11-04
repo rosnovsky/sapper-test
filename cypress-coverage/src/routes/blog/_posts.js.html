@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/routes/blog/_posts.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/routes/blog</a> _posts.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/3</span>
+      </div>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Ordinarily, you'd generate this data from markdown files in your
+// repo, or fetch them from a database of some kind. But in order to
+// avoid unnecessary dependencies in the starter template, and in the
+// service of obviousness, we're just going to leave it here.
+&nbsp;
+// This file is called `_posts.js` rather than `posts.js`, because
+// we don't want to create an `/blog/posts` route — the leading
+// underscore tells Sapper not to do that.
+&nbsp;
+const posts = [
+	{
+		title: 'What is Sapper?',
+		slug: 'what-is-sapper',
+		html: `
+			&lt;p&gt;First, you have to know what &lt;a href='https://svelte.dev'&gt;Svelte&lt;/a&gt; is. Svelte is a UI framework with a bold new idea: rather than providing a library that you write code with (like React or Vue, for example), it's a compiler that turns your components into highly optimized vanilla JavaScript. If you haven't already read the &lt;a href='https://svelte.dev/blog/frameworks-without-the-framework'&gt;introductory blog post&lt;/a&gt;, you should!&lt;/p&gt;
+&nbsp;
+			&lt;p&gt;Sapper is a Next.js-style framework (&lt;a href='blog/how-is-sapper-different-from-next'&gt;more on that here&lt;/a&gt;) built around Svelte. It makes it embarrassingly easy to create extremely high performance web apps. Out of the box, you get:&lt;/p&gt;
+&nbsp;
+			&lt;ul&gt;
+				&lt;li&gt;Code-splitting, dynamic imports and hot module replacement, powered by webpack&lt;/li&gt;
+				&lt;li&gt;Server-side rendering (SSR) with client-side hydration&lt;/li&gt;
+				&lt;li&gt;Service worker for offline support, and all the PWA bells and whistles&lt;/li&gt;
+				&lt;li&gt;The nicest development experience you've ever had, or your money back&lt;/li&gt;
+			&lt;/ul&gt;
+&nbsp;
+			&lt;p&gt;It's implemented as Express middleware. Everything is set up and waiting for you to get started, but you keep complete control over the server, service worker, webpack config and everything else, so it's as flexible as you need it to be.&lt;/p&gt;
+		`
+	},
+&nbsp;
+	{
+		title: 'How to use Sapper',
+		slug: 'how-to-use-sapper',
+		html: `
+			&lt;h2&gt;Step one&lt;/h2&gt;
+			&lt;p&gt;Create a new project, using &lt;a href='https://github.com/Rich-Harris/degit'&gt;degit&lt;/a&gt;:&lt;/p&gt;
+&nbsp;
+			&lt;pre&gt;&lt;code&gt;npx degit "sveltejs/sapper-template#rollup" my-app
+			cd my-app
+			npm install # or yarn!
+			npm run dev
+			&lt;/code&gt;&lt;/pre&gt;
+&nbsp;
+			&lt;h2&gt;Step two&lt;/h2&gt;
+			&lt;p&gt;Go to &lt;a href='http://localhost:3000'&gt;localhost:3000&lt;/a&gt;. Open &lt;code&gt;my-app&lt;/code&gt; in your editor. Edit the files in the &lt;code&gt;src/routes&lt;/code&gt; directory or add new ones.&lt;/p&gt;
+&nbsp;
+			&lt;h2&gt;Step three&lt;/h2&gt;
+			&lt;p&gt;...&lt;/p&gt;
+&nbsp;
+			&lt;h2&gt;Step four&lt;/h2&gt;
+			&lt;p&gt;Resist overdone joke formats.&lt;/p&gt;
+		`
+	},
+&nbsp;
+	{
+		title: 'Why the name?',
+		slug: 'why-the-name',
+		html: `
+			&lt;p&gt;In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as &lt;em&gt;sappers&lt;/em&gt;.&lt;/p&gt;
+&nbsp;
+			&lt;p&gt;For web developers, the stakes are generally lower than those for combat engineers. But we face our own hostile environment: underpowered devices, poor network connections, and the complexity inherent in front-end engineering. Sapper, which is short for &lt;strong&gt;S&lt;/strong&gt;velte &lt;strong&gt;app&lt;/strong&gt; mak&lt;strong&gt;er&lt;/strong&gt;, is your courageous and dutiful ally.&lt;/p&gt;
+		`
+	},
+&nbsp;
+	{
+		title: 'How is Sapper different from Next.js?',
+		slug: 'how-is-sapper-different-from-next',
+		html: `
+			&lt;p&gt;&lt;a href='https://github.com/zeit/next.js'&gt;Next.js&lt;/a&gt; is a React framework from &lt;a href='https://zeit.co'&gt;Zeit&lt;/a&gt;, and is the inspiration for Sapper. There are a few notable differences, however:&lt;/p&gt;
+&nbsp;
+			&lt;ul&gt;
+				&lt;li&gt;It's powered by &lt;a href='https://svelte.dev'&gt;Svelte&lt;/a&gt; instead of React, so it's faster and your apps are smaller&lt;/li&gt;
+				&lt;li&gt;Instead of route masking, we encode route parameters in filenames. For example, the page you're looking at right now is &lt;code&gt;src/routes/blog/[slug].html&lt;/code&gt;&lt;/li&gt;
+				&lt;li&gt;As well as pages (Svelte components, which render on server or client), you can create &lt;em&gt;server routes&lt;/em&gt; in your &lt;code&gt;routes&lt;/code&gt; directory. These are just &lt;code&gt;.js&lt;/code&gt; files that export functions corresponding to HTTP methods, and receive Express &lt;code&gt;request&lt;/code&gt; and &lt;code&gt;response&lt;/code&gt; objects as arguments. This makes it very easy to, for example, add a JSON API such as the one &lt;a href='blog/how-is-sapper-different-from-next.json'&gt;powering this very page&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;Links are just &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; elements, rather than framework-specific &lt;code&gt;&amp;lt;Link&amp;gt;&lt;/code&gt; components. That means, for example, that &lt;a href='blog/how-can-i-get-involved'&gt;this link right here&lt;/a&gt;, despite being inside a blob of HTML, works with the router as you'd expect.&lt;/li&gt;
+			&lt;/ul&gt;
+		`
+	},
+&nbsp;
+	{
+		title: 'How can I get involved?',
+		slug: 'how-can-i-get-involved',
+		html: `
+			&lt;p&gt;We're so glad you asked! Come on over to the &lt;a href='https://github.com/sveltejs/svelte'&gt;Svelte&lt;/a&gt; and &lt;a href='https://github.com/sveltejs/sapper'&gt;Sapper&lt;/a&gt; repos, and join us in the &lt;a href='https://svelte.dev/chat'&gt;Discord chatroom&lt;/a&gt;. Everyone is welcome, especially you!&lt;/p&gt;
+		`
+	}
+];
+&nbsp;
+posts.forEach(post =&gt; {
+	post.html = post.html.replace(/^\t{3}/gm, '');
+});
+&nbsp;
+export default posts;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Nov 03 2019 22:03:12 GMT-0800 (Pacific Standard Time)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+<script src="../../../block-navigation.js"></script>
+</body>
+</html>
